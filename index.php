@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Project Rainfall</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#"><img src="logo.png" height="24" width="24" alt="Project Rainfall" title="Project Rainfall" /></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -42,27 +42,17 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li class="dropdown-header">Cloud Management</li>
+                <li><a href="#">Create Cloud</a></li>
+                <li><a href="#">Manage Clouds</a></li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -70,8 +60,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <h1><img src="logo.png" height="64" width="64" alt="logo" title="Logo" />Project Rainfall</h1>
+        <p>Taking virtual private machines by storm.</p>
         <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -80,26 +70,26 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <h2>Create a Cloud</h2>
+          <p>Press a few buttons and have a virtual computer all to yourself! </p>
+          <p><a class="btn btn-default" href="#">Create one &raquo;</a></p>
         </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Host a Server</h2>
+          <p>We offer virtual machines with up to 64 GB RAM, 4 cores, super fast processor, and 256GB SSD! Host your web server and backend on these VPSs! </p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
        </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <h2>Raindrops</h2>
+          <p>Raindrops. A $99 ARM netbook that connects to the RDP server on each and every Cloud.</p>
+          <p><a class="btn btn-default" href="#">Kickstarter coming soon! &raquo;</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; 2014 Creative Studios</p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.js"><\/script>')</script>
