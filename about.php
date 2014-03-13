@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Project Rainfall</title>
+        <title>About - Project Rainfall</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -38,8 +38,8 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li class="active"><a href="about.php">About</a></li>
             <li><a href="mailto:zebmccorkle@gmail.com">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
@@ -57,32 +57,9 @@
       </div>
     </div>
 
-    <div class="jumbotron">
-      <div class="container">
-        <h1><img src="logo.png" height="64" width="64" alt="logo" title="Logo" />Project Rainfall</h1>
-        <p class="font-roboto-thin">Taking virtual private machines by storm.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Create a Cloud</h2>
-          <p>Press a few buttons and have a virtual computer all to yourself! </p>
-          <p><a class="btn btn-default" href="#">Create one &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Host a Server</h2>
-          <p>We offer virtual machines with up to 64 GB RAM, 4 cores, super fast processor, and 256GB SSD! Host your web server and backend on these VPSs! </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h2>Raindrops</h2>
-          <p>Raindrops. A $99 ARM netbook that connects to the RDP server on each and every Cloud.</p>
-          <p><a class="btn btn-default" href="#">Kickstarter coming soon! &raquo;</a></p>
-        </div>
-      </div>
+        <br />
+        <p class="lead">Project Rainfall.</p>
 
       <hr>
 
