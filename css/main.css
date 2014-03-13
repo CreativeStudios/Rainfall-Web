@@ -1,5 +1,27 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300|Roboto:400,100);
+@font-face {
+    font-family: 'Myriad-Apple-Text';
+    src:url('Myriad-Apple-Text.ttf.woff') format('woff'),
+        url('Myriad-Apple-Text.ttf.svg#Myriad-Apple-Text') format('svg'),
+        url('Myriad-Apple-Text.ttf.eot'),
+        url('Myriad-Apple-Text.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
 .font-roboto-thin {
     font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.font-opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-myriadapple {
+    font-family: 'Myriad-Apple-Text';
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }

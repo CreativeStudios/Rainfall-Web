@@ -59,9 +59,9 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h1><img src="logo.png" height="64" width="64" alt="logo" title="Logo" />Project Rainfall</h1>
+        <h1 class="font-myriadapple"><img src="logo.png" height="64" width="64" alt="logo" title="Logo" />Project Rainfall</h1>
         <p class="font-roboto-thin">Taking virtual private machines by storm.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg font-opensans">Learn more &raquo;</a></p>
       </div>
     </div>
 
