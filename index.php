@@ -68,8 +68,8 @@
       <div class="container">
         <h1 class="font-myriadapple"><img src="logo.png" height="64" width="64" alt="logo" title="Logo" />Project Rainfall</h1>
         <p class="font-roboto-thin">Taking virtual private machines by Storm.</p>
-        <div class="alert alert-warning"><b>NYI</b> The Rainfall website doesn't quite work... We are hiring a <i>web</i> backend (PHP) developer (not working with VMs at all) to implement the login system. I (Zeb McCorkle) will work on the frontend and StormOS. <p><a class="btn btn-warning btn-lg font-myriadapple" href="https://docs.google.com/forms/d/1Sp8XxT-r6gMJiGDjh_v_JBt-D1Q4eBJkrJY_FYWBcm0/viewform?entry.1056744199=Project+Rainfall+Web+Backend+Programmer+(PHP)&entry.632307721&entry.114788012&entry.1876970427&entry.1649968259=Rainfall+website&entry.631943157">Apply &raquo;</a></p></div>
-        <p><a class="btn btn-primary btn-lg font-opensans">Learn more &raquo;</a></p>
+        <div class="alert alert-warning"><b>NYI</b> The Rainfall website doesn't quite work... We are looking for a <i>web</i> backend (PHP) developer (not working with VMs at all) to implement the login system. I (Zeb McCorkle) will work on the frontend, StormOS, and the StormOS backend (Node.JS! <code>bash</code>! <code>VBoxManage</code>! Yay!). Contact using the tab above to apply. You must submit a pull request on <a href="https://www.github.com/CreativeStudios/Rainfall-Web">the GitHub repo</a> having to do with the login system to be considered.</div>
+        <p><a class="btn btn-primary btn-lg font-opensans" href="about.php">Learn more &raquo;</a></p>
       </div>
     </div>
 

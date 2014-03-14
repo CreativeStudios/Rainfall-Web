@@ -24,6 +24,21 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="https://login.persona.org/include.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            function startCloud() {
+                $("cloudname").val();
+                $.ajax({
+                    url: "http://192.168.1.110:9001/start/" + $("#cloudname").val()
+                });
+                alert("Cloud " + $("#cloudname").val() + " started.");
+            }
+            function killCloud() {
+                $.ajax({
+                    url: "http://192.168.1.110:9001/kill/" + $("#cloudname").val()
+                });
+                alert("Cloud " + $("#cloudname").val() + " killed.");
+            }
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -41,20 +56,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="mailto:zebmccorkle@gmail.com">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li id="login" style="background-color: orange;"><a href="#">Login</a></li>
-                <li id="logout"><a href="#">Log out</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Cloud Management</li>
-                <li><a href="#">Create Cloud</a></li>
-                <li><a href="#">Manage Clouds</a></li>
-              </ul>
-            </li>
+            <li class="active"><a href="dash.php">Dashboard</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -62,7 +64,56 @@
 
     <div class="container">
         <br />
-
+        <div class="page-header">
+            <h1>Rainfall Dashboard <small><span class="label label-info">BETA</span></small></h1>
+            <div class="alert alert-warning"><strong>Attention:</strong> You are using a beta version of Project Rainfall which is subject to change.</div>
+        </div>
+        <h2>Start/Stop Cloud</h2>
+        <input type="text" id="startstop-cloudname" class="form-control" placeholder="Cloud ID" /><br />
+        <center><div class="btn-group">
+            <button type="button" class="btn btn-success" onclick="startCloud();">Start Cloud</button>
+            <button type="button" class="btn btn-danger" onclick="killCloud();">Kill Cloud</button>
+        </div></center>
+        <h2>Create Cloud</h2>
+        <input type="text" id="create-username" class="form-control" placeholder="Username" />
+        <input type="text" id="create-cloudname" class="form-control" placeholder="Cloud ID" />
+        <select class="form-control" name="create-os" id="create-os">
+            <option disabled>Operating System</option>
+            <option>Ubuntu_64</option>
+        </select>
+        <div class="input-group">
+            <input type="text" class="form-control" id="create-ram" placeholder="RAM" />
+            <span class="input-group-addon">MB</span>
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control" id="create-vram" placeholder="Graphics Memory" />
+            <span class="input-group-addon">MB</span>
+        </div>
+        <select class="form-control" name="create-os" id="create-cores">
+            <option disabled>Cores</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <div class="input-group">
+            <input type="text" class="form-control" id="create-speed" placeholder="Speed" />
+            <span class="input-group-addon">%</span>
+        </div>
+        <label class="radio-inline">
+            <input type="radio" name="create-firmware" id="create-bios" value="bios" /> Legacy BIOS
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="create-firmware" id="create-efi" value="efi" /> (U)EFI
+        </label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="create-sram" placeholder="Shared RAM" />
+            <span class="input-group-addon">MB</span>
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control" id="create-sram" placeholder="Hard drive size" />
+            <span class="input-group-addon">MB</span>
+        </div><br />
+        <center><button type="button" class="btn btn-success">Create Cloud</button></center>
       <hr>
 
       <footer>
