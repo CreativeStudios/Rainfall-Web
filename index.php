@@ -9,6 +9,7 @@
         <title>Project Rainfall</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
@@ -18,16 +19,19 @@
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://raw.github.com/mozilla/browserid-cookbook/master/php/css/persona-buttons.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="https://login.persona.org/include.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
     <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
@@ -44,14 +48,17 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
+                <li id="login" style="background-color: orange;"><a href="#">Login</a></li>
+                <li id="logout"><a href="#">Log out</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Cloud Management</li>
                 <li><a href="#">Create Cloud</a></li>
                 <li><a href="#">Manage Clouds</a></li>
               </ul>
             </li>
+            <li><a href="#">
+                <?php if (exec("whoami") == "www-data") echo "WELCOME"; else echo "Dev version - WELCOME"; ?>.
+            </a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -60,7 +67,8 @@
     <div class="jumbotron">
       <div class="container">
         <h1 class="font-myriadapple"><img src="logo.png" height="64" width="64" alt="logo" title="Logo" />Project Rainfall</h1>
-        <p class="font-roboto-thin">Taking virtual private machines by storm.</p>
+        <p class="font-roboto-thin">Taking virtual private machines by Storm.</p>
+        <div class="alert alert-warning"><b>NYI</b> The Rainfall website doesn't quite work... We are hiring a <i>web</i> backend (PHP) developer (not working with VMs at all) to implement the login system. I (Zeb McCorkle) will work on the frontend and StormOS.</div>
         <p><a class="btn btn-primary btn-lg font-opensans">Learn more &raquo;</a></p>
       </div>
     </div>
