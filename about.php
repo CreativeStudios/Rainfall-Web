@@ -63,7 +63,19 @@
     <div class="container">
         <br />
         <span class="lead font-myriadapple">Project Rainfall.</span> Zeb McCorkle thought up a consumer virtualization network in the Fall of 2013. He kept the idea in his mind until March 13, 2014, when the website development started.<hr />
-        The basic idea is (Rain) Clouds on (Rain) Storms, hence the tagline "<span class="font-roboto-thin">Taking virtual private machines by Storm.</span>" A Cloud is a virtual machine, and a Storm is the physical machine that hosts many Clouds. Creating a Cloud is as simple as paying <i>once</i> for the Cloud then paying a monthly power fee based off the CPU usage of your Cloud. Upgrading your Cloud is as simple as shutting down and buying new "parts" on the web interface.
+        The basic idea is (Rain) Clouds on (Rain) Storms, hence the tagline "<span class="font-roboto-thin">Taking virtual private machines by Storm.</span>" A Cloud is a virtual machine, and a Storm is the physical machine that hosts many Clouds. Creating a Cloud is as simple as paying <i>once</i> for the Cloud then paying a monthly power fee based off the CPU usage of your Cloud. Upgrading your Cloud is as simple as shutting down and buying new "parts" on the web interface.<hr>
+        <h2>About the Team</h2>
+        <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/zebmccorkle.png" alt="...">
+      <div class="caption">
+        <h3>Zeb McCorkle</h3>
+        <p>Web frontend and StormOS dev</p>
+      </div>
+    </div>
+  </div>
+</div>
       <hr>
 
       <footer>
